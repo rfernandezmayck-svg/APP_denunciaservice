@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permiso para consumo de API REST -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.RodasFernandez_EC">
+
+        <!-- Pantalla Principal -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Registrar Denuncia -->
+        <activity
+            android:name=".RegistrarDenunciaActivity"
+            android:exported="false"
+            android:label="Registrar Denuncia"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Listar Denuncias -->
+        <activity
+            android:name=".ListaDenunciasActivity"
+            android:exported="false"
+            android:label="Listado de Denuncias"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Detalle de Denuncia -->
+        <activity
+            android:name=".DetalleDenunciaActivity"
+            android:exported="false"
+            android:label="Detalle de Denuncia"
+            android:parentActivityName=".ListaDenunciasActivity" />
+
+        <!-- Buscar Denuncias por DNI -->
+        <activity
+            android:name=".BuscarDniActivity"
+            android:exported="false"
+            android:label="Buscar por DNI"
+            android:parentActivityName=".MainActivity" />
+
+    </application>
+
+</manifest>

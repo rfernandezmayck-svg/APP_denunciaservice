@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#E3F2FD</color>
+    <color name="secondary">#00897B</color>
+    <color name="secondary_dark">#004D40</color>
+    <color name="accent_purple">#5E35B1</color>
+
+    <!-- Status Colors -->
+    <color name="status_pending_bg">#FFEBEE</color>
+    <color name="status_pending_text">#C62828</color>
+    <color name="status_attended_bg">#E8F5E9</color>
+    <color name="status_attended_text">#2E7D32</color>
+
+    <!-- Neutral Colors -->
+    <color name="bg_main">#F8F9FA</color>
+    <color name="card_border">#E0E0E0</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#616161</color>
+    <color name="text_hint">#9E9E9E</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
